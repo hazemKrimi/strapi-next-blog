@@ -1,0 +1,23 @@
+{
+  "connection": "default",
+  "collectionName": "category",
+  "info": {
+    "name": "category",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "posts": {
+      "collection": "post",
+      "via": "category"
+    }
+  }
+}

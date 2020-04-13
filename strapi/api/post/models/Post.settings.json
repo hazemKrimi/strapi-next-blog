@@ -1,0 +1,33 @@
+{
+  "connection": "default",
+  "collectionName": "post",
+  "info": {
+    "name": "post",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "text",
+      "required": true
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "category": {
+      "model": "category",
+      "via": "posts"
+    }
+  }
+}
